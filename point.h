@@ -1,6 +1,7 @@
 #ifndef POINT_H
 #define POINT_H
 
+#include<cmath>
 
 class Point
 {
@@ -17,6 +18,7 @@ public:
     Point& operator + (Point& move);
     Point& operator - (Point& move);
     Point& operator = (Point& copypoint);
+    int rotate(Point& axis, double angle);
 };
 
 #endif // POINT_H
