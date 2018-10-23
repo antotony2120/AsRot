@@ -67,5 +67,5 @@ int Point::rotate(Point& r, double w) // r - axis, w - angle
     this->_x = new_x;
     this->_y = new_y;
     this->_z = new_z;
-    return 1;
+    return 0;
 }
