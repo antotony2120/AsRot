@@ -5,7 +5,9 @@ CONFIG -= qt
 
 SOURCES += \
         main.cpp \
-    point.cpp
+    point.cpp \
+    vector3d.cpp
 
 HEADERS += \
-    point.h
+    point.h \
+    vector3d.h

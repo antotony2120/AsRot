@@ -3,22 +3,28 @@
 
 #include<cmath>
 
+#include"vector3d.h"
+
+class Vector3d;
+
 class Point
 {
 private:
     double _x, _y, _z;
 public:
     Point();
-    Point(double _x, double _y, double _z);
-    Point(Point& copypoint);
+    Point(const double _x, const double _y, const double _z);
+    Point(const Point& copypoint);
     ~Point();
-    double x();
-    double y();
-    double z();
-    Point& operator + (Point& move);
-    Point& operator - (Point& move);
-    Point& operator = (Point& copypoint);
-    int rotate(Point& axis, double angle);
+
+    double x() const;
+    double y() const;
+    double z() const;
+    Point& operator + (const Point& move);
+    Point& operator - (const Point& move);
+    Point& operator = (const Point& copypoint);
+    int rotate(const Point& axis, const double angle);
+    int rotate(const Vector3d &vecr, const double w);
 };
 
 #endif // POINT_H
